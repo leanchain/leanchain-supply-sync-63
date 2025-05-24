@@ -23,9 +23,9 @@ const slides = [
   {
     id: 1,
     title: "LeanChain",
-    subtitle: "Intelligent Supply Chain for SMEs",
+    subtitle: "AI Supply Planning Co-Pilot",
     type: "title",
-    tagline: "Supply chain clarity for small businesses",
+    tagline: "Smarter Planning Without Replacing Your ERP",
     founder: {
       name: "Pankaj Kumar",
       title: "Founder & CEO",
@@ -37,20 +37,21 @@ const slides = [
   {
     id: 2,
     title: "The Problem",
-    subtitle: "SME Operations Face Daily Chaos",
+    subtitle: "Supply Planning is Broken for SMEs",
     type: "problem",
     icon: AlertTriangle,
     description:
-      "An operations manager frustrated by manual processes and data silos. Businesses report these key pain points from our interviews:",
+      "Operations teams struggle with disconnected planning tools and reactive decision-making. Key pain points from our research:",
     points: [
-      "Forecasting gaps: Excel spreadsheets cause errors and outdated plans",
-      "Data silos: Disconnected ERPs/systems mean no single source of truth",
-      "Inventory issues: No real-time view leads to stockouts, overstocking, missed sales",
-      "Operational drag: Teams waste hours reconciling data instead of planning",
-      "Manual forecasting and inventory planning leads to constant errors and blind spots",
+      "Planning chaos: Excel-based forecasting creates errors and outdated demand plans",
+      "ERP limitations: Existing systems lack intelligent planning and predictive insights",
+      "Reactive operations: Teams constantly firefight stockouts and overstock situations",
+      "Data fragmentation: Multiple systems create planning blind spots and delays",
+      "Manual processes: Hours wasted on data reconciliation instead of strategic planning",
     ],
-    stat: "78% of SMEs struggle with inventory accuracy",
-    impact: "These inefficiencies constrain growth and profitability for SMEs",
+    stat: "78% of SMEs struggle with accurate demand planning",
+    impact:
+      "Poor planning decisions directly impact cash flow and customer satisfaction",
   },
   {
     id: 3,
@@ -70,55 +71,53 @@ const slides = [
   {
     id: 4,
     title: "Our Solution",
-    subtitle: "Excel-First Planning & Inventory Sync Tool",
+    subtitle: "AI-Powered Planning Co-Pilot for Your Existing ERP",
     type: "solution",
     icon: Wrench,
-    backgroundImage:
-      "/lovable-uploads/433bc4ea-8ecc-4d46-8e50-2977fa012d42.png",
     description:
-      "LeanChain provides an Excel-first planning & inventory sync tool. Users start with their existing Excel forecasts and click to import them into our platform.",
+      "LeanChain acts as an intelligent planning layer that enhances your existing ERP with AI-powered demand forecasting and inventory optimization.",
     points: [
-      "Seamless Excel integration: Import/export forecasts with one click",
-      "Real-time sync: Instant updates across ERPs, warehouses, and sales platforms",
-      "Multi-channel support: Integrates Shopify, Amazon, WooCommerce, and more",
-      "Unified dashboard: Consolidated view of inventory, POs, forecasts, and KPIs",
-      "Intuitive, spreadsheet-like interface means teams can adopt it immediately",
+      "AI demand forecasting: Machine learning models predict demand patterns from your historical data",
+      "ERP enhancement: Works alongside your existing systems without replacement",
+      "Excel-friendly interface: Familiar spreadsheet workflow with intelligent recommendations",
+      "Real-time optimization: Continuous inventory and procurement planning adjustments",
+      "Multi-channel intelligence: Unified planning across all sales channels and warehouses",
     ],
-    stat: "90% setup reduction vs traditional ERP",
+    stat: "Reduces planning time by 80% while improving accuracy",
   },
   {
     id: 5,
     title: "Business Model",
-    subtitle: "Scalable SaaS with Predictable Revenue",
+    subtitle: "AI Co-Pilot SaaS with Predictable Revenue",
     type: "business-model",
     icon: DollarSign,
     description:
-      "LeanChain is a cloud-based SaaS with tiered pricing based on company size and features.",
+      "LeanChain operates as a planning co-pilot SaaS that enhances existing ERP investments rather than replacing them.",
     points: [
-      "Tiered subscription: Basic, Pro, Enterprise plans (per-company, monthly)",
-      "API addons: Premium plans include API access and custom integration support",
-      "Usage-based: Pricing scales with number of channels or transaction volume",
-      "Professional services: Optional setup and training for complex cases (minimal)",
-      "No large upfront license fees, making sales simple",
+      "Co-pilot pricing: Subscription based on planning complexity and data volume",
+      "ERP-agnostic model: Works with any existing ERP system without migration costs",
+      "AI-powered tiers: Basic forecasting to advanced optimization and scenario planning",
+      "Implementation support: Guided onboarding with minimal professional services",
+      "Value-based pricing: ROI-focused model tied to planning accuracy improvements",
     ],
-    stat: "Unit economics: 85% gross margin, 24-month payback",
+    stat: "Unit economics: 85% gross margin, 18-month payback",
   },
   {
     id: 6,
     title: "Secret Sauce",
-    subtitle: "Plug-and-Play Simplicity",
+    subtitle: "AI-Powered Planning Intelligence",
     type: "competitive-advantage",
     icon: Zap,
     description:
-      "Our secret is plug‑and‑play simplicity combined with deep integration.",
+      "Our competitive advantage combines AI-powered planning intelligence with seamless ERP integration.",
     points: [
-      "Adapters galore: Ready-made connectors for SAP, Odoo, QuickBooks, Shopify, WooCommerce",
-      "Excel-like UI: Familiar spreadsheet workflow; zero training required",
-      "Rapid onboarding: Guided setup wizard – typically live in 1–2 weeks",
-      "Continuous sync: Automated two-way data flow and smart alerts for discrepancies",
-      "Integration takes minutes, not months",
+      "Smart adapters: AI-enhanced connectors that learn from your ERP data patterns",
+      "Planning intelligence: Machine learning models trained on supply chain best practices",
+      "Familiar interface: Excel-like experience with AI recommendations and insights",
+      "Rapid deployment: Co-pilot setup in days, not months of ERP implementation",
+      "Continuous learning: AI models improve planning accuracy over time",
     ],
-    stat: "Days to deploy, not months",
+    stat: "AI-powered planning without ERP replacement",
   },
   {
     id: 7,
@@ -140,22 +139,22 @@ const slides = [
   {
     id: 8,
     title: "Go-to-Market Strategy",
-    subtitle: "Community, Partnerships & Product-Led Growth",
+    subtitle: "ERP Enhancement & Co-Pilot Positioning",
     type: "gtm",
     icon: Rocket,
     points: [
-      "Community & content: Reddit/LinkedIn groups, blog posts, SEO targeting supply chain pain points",
-      "ERP partnerships: Joint marketing with consultants and VARs (Odoo/NetSuite/SAP partners)",
-      "Product-led growth: Self-serve trials and demos to let teams adopt LeanChain organically",
-      "Events/webinars: Present at industry meetups, e-commerce/retail conferences for visibility",
-      "Bottom-up adoption through operations teams championing internally",
+      "ERP enhancement messaging: Position as intelligent upgrade, not replacement",
+      "Partner ecosystem: Collaborate with ERP consultants and implementation partners",
+      "Planning-focused content: Target operations managers struggling with forecasting accuracy",
+      "Co-pilot trials: Self-serve demos showing AI planning improvements on real data",
+      "Bottom-up adoption: Operations teams champion the planning intelligence benefits",
     ],
-    stat: "Multi-channel acquisition strategy",
+    stat: "ERP-friendly positioning drives faster adoption",
   },
   {
     id: 9,
     title: "Competitive Landscape",
-    subtitle: "Positioned Between Heavy ERPs & DIY Spreadsheets",
+    subtitle: "AI Co-Pilot vs Traditional Planning Tools",
     type: "competition",
     icon: Shield,
     competitive_table: {
@@ -163,43 +162,48 @@ const slides = [
         "Feature",
         "SAP Business One/Oracle",
         "Odoo (Open ERP)",
-        "LeanChain",
+        "LeanChain Co-Pilot",
       ],
       rows: [
         [
-          "Deployment time",
+          "Planning intelligence",
+          "Basic MRP modules",
+          "Manual forecasting",
+          "AI-powered predictions",
+        ],
+        [
+          "ERP relationship",
+          "Full replacement required",
+          "Full replacement required",
+          "Enhancement layer",
+        ],
+        [
+          "Deployment approach",
           "Months (consultants)",
           "Weeks (technical)",
-          "Days (self-serve setup)",
+          "Days (co-pilot setup)",
         ],
         [
-          "ERP integration",
-          "Built-in, but proprietary",
-          "Modular (custom APIs)",
-          "Plug‑and‑play adapters",
-        ],
-        [
-          "User interface",
+          "User experience",
           "Complex ERP modules",
           "Dashboards/Forms",
-          "Spreadsheet-first UI",
+          "Excel-like with AI insights",
         ],
         [
-          "Target segment",
-          "Large enterprises/SMBs",
-          "SMBs/Tech-savvy",
-          "SMBs (e-com/mfg focus)",
+          "Planning accuracy",
+          "Static rules-based",
+          "Manual adjustments",
+          "ML-driven continuous improvement",
         ],
-        ["Requires consulting", "Yes", "Often", "No (DIY)"],
         [
-          "Cost structure",
-          "High license + fees",
-          "Low license/SaaS",
-          "Competitive SaaS",
+          "Implementation risk",
+          "High (full migration)",
+          "Medium (system change)",
+          "Low (enhancement only)",
         ],
       ],
     },
-    stat: "Fast to deploy, easy to use, tailored for modern SMBs",
+    stat: "AI planning intelligence without ERP replacement risk",
   },
   {
     id: 10,
@@ -233,28 +237,28 @@ const slides = [
         background: "Placeholder",
       },
     ],
-    hiring: ["Lead Full-Stack Developer", "Growth Marketing Specialist"],
+    hiring: [],
     stat: "Team goal: 5 people by end of Year 1",
   },
   {
     id: 11,
     title: "The Ask",
-    subtitle: "Co-Founder, Partnerships & Pilot Customers",
+    subtitle: "Co-Founder, Partners & AI Planning Pilots",
     type: "cta",
     icon: Mail,
     description:
-      "We're not raising funding yet; our immediate need is people and partnerships.",
+      "We're building the future of AI-powered supply planning. Join us in revolutionizing how SMEs plan and optimize their operations.",
     points: [
-      "Co-founder/CTO: Enterprise SaaS experience (especially data engineering or analytics)",
-      "Strategic partners: ERP implementers, industry advisors, and pilot customers",
-      "Pilot customers: E-commerce/retailers and manufacturers to validate and refine our product",
-      "If LeanChain's vision resonates, let's connect!",
+      "Co-founder/CTO: AI/ML expertise with enterprise SaaS experience",
+      "ERP partners: Implementation consultants interested in AI planning co-pilot offerings",
+      "Pilot customers: Operations teams ready to enhance their planning with AI intelligence",
+      "If AI-powered planning without ERP replacement resonates, let's connect!",
     ],
     contact: {
       email: "pankaj@leanchain.eu",
       linkedin: "linkedin.com/in/pankaj4u4m",
       website: "leanchain.eu",
-      tagline: "Let's simplify supply chains together!",
+      tagline: "Let's make supply planning intelligent together!",
     },
   },
 ];
@@ -346,54 +350,63 @@ const PitchDeck = () => {
       <div className="flex-1 flex items-center justify-center px-8 relative z-10">
         <div className="max-w-6xl w-full">
           {slide.type === "title" ? (
-            <div className="text-center space-y-12 animate-fade-in">
-              <div className="space-y-6">
-                <div className="inline-flex items-center justify-center p-4 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl mb-8 border border-white/30">
-                  <div className="relative">
-                    <TrendingUp className="w-12 h-12 text-blue-600" />
-                    <Zap className="text-orange-500 absolute -top-1 -right-1 w-6 h-6" />
-                  </div>
-                </div>
-                <h1 className="font-bold bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent text-8xl tracking-tight inline-block">
-                  {slide.title}
-                </h1>
-                <p className="text-3xl text-slate-700 max-w-4xl mx-auto leading-relaxed font-light">
-                  {slide.subtitle}
-                </p>
-                <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
-                  {slide.tagline}
-                </p>
-              </div>
-
-              {/* Founder Info */}
-              {slide.founder && (
-                <div className="bg-white/90 backdrop-blur-md rounded-2xl p-8 max-w-3xl mx-auto border border-white/30 shadow-xl">
-                  <div className="space-y-4">
-                    <h3 className="text-2xl font-bold text-slate-800">
-                      {slide.founder.name}
-                    </h3>
-                    <p className="font-bold bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent text-lg inline-block">
-                      {slide.founder.title}
-                    </p>
-                    <p className="text-slate-600">{slide.founder.background}</p>
-                    <div className="flex items-center justify-center space-x-8 pt-4 border-t border-slate-200">
-                      <div className="text-center">
-                        <p className="font-semibold text-slate-700">Email</p>
-                        <p className="text-sm text-slate-600">
-                          {slide.founder.email}
-                        </p>
-                      </div>
-                      <div className="w-px h-8 bg-slate-300"></div>
-                      <div className="text-center">
-                        <p className="font-semibold text-slate-700">LinkedIn</p>
-                        <p className="text-sm text-slate-600">
-                          {slide.founder.linkedin}
-                        </p>
-                      </div>
+            <div className="space-y-10">
+              {/* Slide header */}
+              <div className="text-center space-y-6 animate-fade-in">
+                <div className="flex justify-center">
+                  <div className="p-5 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-white/30">
+                    <div className="relative">
+                      <TrendingUp className="w-14 h-14 text-blue-600" />
+                      <Zap className="text-orange-500 absolute -top-1 -right-1 w-6 h-6" />
                     </div>
                   </div>
                 </div>
-              )}
+                <div className="space-y-6">
+                  <h1 className="font-bold bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent text-8xl tracking-tight inline-block">
+                    {slide.title}
+                  </h1>
+                  <p className="text-3xl text-slate-700 max-w-4xl mx-auto leading-relaxed font-light">
+                    {slide.subtitle}
+                  </p>
+                  <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+                    {slide.tagline}
+                  </p>
+                </div>
+
+                {/* Founder Info */}
+                {slide.founder && (
+                  <div className="bg-white/90 backdrop-blur-md rounded-2xl p-8 max-w-3xl mx-auto border border-white/30 shadow-xl">
+                    <div className="space-y-4">
+                      <h3 className="text-2xl font-bold text-slate-800">
+                        {slide.founder.name}
+                      </h3>
+                      <p className="font-bold bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent text-lg inline-block">
+                        {slide.founder.title}
+                      </p>
+                      <p className="text-slate-600">
+                        {slide.founder.background}
+                      </p>
+                      <div className="flex items-center justify-center space-x-8 pt-4 border-t border-slate-200">
+                        <div className="text-center">
+                          <p className="font-semibold text-slate-700">Email</p>
+                          <p className="text-sm text-slate-600">
+                            {slide.founder.email}
+                          </p>
+                        </div>
+                        <div className="w-px h-8 bg-slate-300"></div>
+                        <div className="text-center">
+                          <p className="font-semibold text-slate-700">
+                            LinkedIn
+                          </p>
+                          <p className="text-sm text-slate-600">
+                            {slide.founder.linkedin}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           ) : slide.type === "competition" ? (
             <div className="space-y-10">
@@ -555,7 +568,7 @@ const PitchDeck = () => {
                   </div>
 
                   {/* Hiring section */}
-                  {slide.hiring && (
+                  {slide.hiring && slide.hiring.length > 0 && (
                     <div className="leanchain-gradient rounded-xl p-6 text-white shadow-lg">
                       <h3 className="text-xl font-bold mb-3">Now Hiring:</h3>
                       <div className="flex flex-wrap gap-2">
