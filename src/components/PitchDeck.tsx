@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   ChevronLeft,
   ChevronRight,
@@ -265,6 +265,8 @@ const slides = [
 
 const PitchDeck = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isScrollingRef = useRef(false);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -299,6 +301,67 @@ const PitchDeck = () => {
       window.removeEventListener("keydown", handleKeyPress);
     };
   }, [currentSlide]);
+
+  // Scroll navigation
+  useEffect(() => {
+    const handleScroll = (event: WheelEvent) => {
+      // Prevent default scroll behavior
+      event.preventDefault();
+
+      // If already scrolling, ignore new scroll events
+      if (isScrollingRef.current) {
+        return;
+      }
+
+      // Clear any existing timeout
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+
+      // Set scrolling flag
+      isScrollingRef.current = true;
+
+      // Determine scroll direction with lower threshold for sensitivity
+      const deltaY = event.deltaY;
+
+      // Much lower threshold - even small scrolls will trigger navigation
+      if (Math.abs(deltaY) > 10) {
+        // Very low threshold for high sensitivity
+        if (deltaY > 0) {
+          // Scrolling down - go to next slide
+          setCurrentSlide((prev) => {
+            if (prev < slides.length - 1) {
+              return prev + 1;
+            }
+            return prev;
+          });
+        } else {
+          // Scrolling up - go to previous slide
+          setCurrentSlide((prev) => {
+            if (prev > 0) {
+              return prev - 1;
+            }
+            return prev;
+          });
+        }
+      }
+
+      // Much shorter delay for smoother experience
+      scrollTimeoutRef.current = setTimeout(() => {
+        isScrollingRef.current = false;
+      }, 150); // Very short 150ms delay for smooth scrolling
+    };
+
+    // Add wheel event listener with passive: false to allow preventDefault
+    window.addEventListener("wheel", handleScroll, { passive: false });
+
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+    };
+  }, []); // Remove currentSlide dependency to avoid re-creating the listener
 
   // Simple PDF download function
   const downloadPDF = () => {
